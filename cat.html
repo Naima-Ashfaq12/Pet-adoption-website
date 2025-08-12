@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cat Categories</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+     .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    transition: background 0.3s;
+}
+
+.back-arrow:hover {
+    background: #f1f1f1;
+}
+
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+  .about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-media {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.about-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-media img:hover {
+  transform: scale(1.03);
+}
+
+.about-text {
+  flex: 1 1 300px;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.about-text h2 {
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+     font-size: 3em;
+      color: rgba(177, 101, 51, 0.938);
+      margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+  white-space: pre-line; /* for line breaks */
+}
+
+/* Custom Button Styling */
+.custom-btn {
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ff4c4c;
+}
+
+.custom-btn.btn-2 span {
+  display: inline-block;
+  position: relative;
+  transition: padding-right 0.3s ease;
+}
+
+.custom-btn.btn-2 span::after {
+  content: '➔';
+  position: absolute;
+  right: -20px;
+  opacity: 0;
+  transition: opacity 0.3s, right 0.3s;
+}
+
+.custom-btn.btn-2:hover span {
+  padding-right: 25px;
+}
+
+.custom-btn.btn-2:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding: 20px 0;
+  }
+}
+
+
+	/* Button 2: Glow on Hover */
+    .btn-2 {
+      background: #6a11cb;
+      background: linear-gradient(to right, #2575fc, #6a11cb);
+    }
+    .btn-2:hover {
+      box-shadow: 0 0 15px #6a11cb, 0 0 40px #2575fc;
+    }
+
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text h2 {
+        font-size: 28px;
+      }
+
+      .about-text p {
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+  </style>
+</head>
+<body>
+ <a href="blog.html" class="back-arrow">
+    <i class="fas fa-arrow-left"></i>
+</a>
+  <!-- Cat Categories Intro -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Cat Categories</h2>
+      <p>
+        Explore the most beloved cat breeds from around the world—each with its own unique charm, personality, and care needs. Whether you're 
+	drawn to the luxurious coat of a Persian, the vocal and social nature of a Siamese, or the playful curiosity of a Maine Coon, there’s a 
+	breed that fits every lifestyle. Cats are known for their independence, agility, and affectionate moments that often come when you least 
+	expect them. From sleek, short-haired companions to fluffy lap-warmers, cats bring a soothing presence and elegant grace to any home. Their 
+	minimal grooming needs, quiet demeanor, and adaptability make them ideal pets for both city dwellers and country homes alike. With the right 
+	care and environment, a cat becomes more than a pet—it becomes a deeply bonded family member.
+      </p>
+    </div>
+    <div class="about-media">
+      <img src="images/cat.png" alt="Main Cat Image">
+    </div>
+  </section>
+
+<!-- NEW HEADING FOR CATS -->
+<h2 style="text-align: center; font-size: 34px; margin: 40px 0 20px; color: #444; font-weight: bold; font-family: 'Segoe UI', sans-serif;">
+  🐱 Available Cat Categories
+</h2>
+
+<!-- Persian Cat -->
+<section class="about-section">
+  <div class="about-text">
+    <h2>Persian Cat</h2>
+    <p>
+      Meet Muffin – The Queen of Comfort!  
+      Name: Muffin  
+      Age: 2 years  
+      Breed: Persian  
+      Gender: Female  
+      Color: White & Cream  
+      Size: Medium  
+      Personality: Calm, Gentle, Regal  
+      Vaccinated: Yes  
+
+      About Muffin:  
+      Muffin is a plush Persian cat with a luxurious coat and a peaceful demeanor. She prefers calm surroundings, sunny windowsills, and soft cushions. Daisy is affectionate in her own regal way and enjoys being groomed and pampered. She’s perfect for someone looking for a quiet, elegant companion who’s content to relax by your side.
+    </p>
+    <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+  <div class="about-media">
+    <img src="available pets/Cats/Persian cat.jpg" alt="Persian Cat">
+  </div>
+</section>
+
+<!-- Maine Coon -->
+<section class="about-section">
+  <div class="about-media">
+    <img src="available pets/Cats/Maine coon.jpg" alt="Maine Coon">
+  </div>
+  <div class="about-text">
+    <h2>Maine Coon</h2>
+    <p>
+      Meet Neko – The Gentle Giant of Cats!  
+      Name: Neko 
+      Age: 3.5 years  
+      Breed: Maine Coon  
+      Gender: Male  
+      Color: Brown Tabby  
+      Size: Large  
+      Personality: Friendly, Intelligent, Playful  
+      Vaccinated: Yes  
+
+      About Neko:  
+      Neko is a big-hearted Maine Coon with a playful spirit and affectionate nature. He’s incredibly social, loves following you around, and enjoys interactive toys. Despite his size, he’s gentle and great with kids and other pets. Max would thrive in a home where he’s treated like a member of the family and given space to roam and climb.
+    </p>
+    <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+</section>
+
+<!-- British Shorthair -->
+<section class="about-section">
+  <div class="about-text">
+    <h2>British Shorthair</h2>
+    <p>
+      Meet Miso – The Classic Beauty!  
+      Name: Miso  
+      Age: 1.8 years  
+      Breed: British Shorthair  
+      Gender: Female  
+      Color: Blue-Gray  
+      Size: Medium  
+      Personality: Calm, Reserved, Loyal  
+      Vaccinated: Yes  
+
+      About Miso:  
+      Miso is a gorgeous British Shorthair with plush fur and a poised attitude. She is affectionate yet independent and enjoys observing the household calmly. Luna doesn’t demand attention but loves a good cuddle when she's in the mood. Perfect for a quiet home where she can shine in all her elegant glory.
+    </p><a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+  <div class="about-media">
+    <img src="available pets/Cats/short hair.jpg" alt="British Shorthair">
+  </div>
+</section>
+
+<!-- Siamese Cat -->
+<section class="about-section">
+  <div class="about-media">
+    <img src="available pets/Cats/Siamese.jpg" alt="Siamese Cat">
+  </div>
+  <div class="about-text">
+    <h2>Siamese Cat</h2>
+    <p>
+      Meet Tofu – The Elegant Talker!  
+      Name: Tufo  
+      Age: 2.5 years  
+      Breed: Siamese  
+      Gender: Female  
+      Color: Cream & Chocolate Points  
+      Size: Small  
+      Personality: Vocal, Social, Smart  
+      Vaccinated: Yes  
+
+      About Tufo:  
+      Tufo is a striking Siamese cat known for her stunning blue eyes and love for conversation. She’ll greet you at the door, follow you around, and express her thoughts with sweet meows. Coco is intelligent, loves puzzle toys, and thrives on interaction. If you want a companion who talks back, Coco’s your girl!
+    </p>
+    <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+</section>
+
+
+
+</body>
+</html>

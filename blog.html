@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Glassmorphism Flip Card</title>
+<style>
+  /* Body & general styles */
+  .body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://images.unsplash.com/photo-1525253086316-d0c936c814f8') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  nav {
+  background-color: #f3c073;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  box-shadow: 0 0 30px rgba(227, 228, 237, 0.37);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+  z-index: 1;
+}
+
+.logo h1 {
+  font-size: 1.8em;
+  color: brown;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #4e342e;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #3e2723;
+}
+  h2 {
+    max-width: 900px;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px 40px;
+    max-width: 960px;
+    width: 100%;
+  }
+  
+  /* Flip Card Styles */
+  .flip-card {
+    width: 280px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+  
+  /* Front Side */
+  .flip-card-front {
+    background-color: #ddd;
+    color: black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  }
+  
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+  }
+  
+  .flip-card-front h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.85);
+    pointer-events: none;
+  }
+  
+  /* Back Side with Glassmorphism */
+  .flip-card-back {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .flip-card-back h3 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .flip-card-back p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+  
+  .flip-card-back a {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  }
+  
+  .flip-card-back a:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: #333;
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">
+    <h1>PawFect</h1>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="blog.html">Categories</a></li>
+    <li><a href="contact.html" class="contact-link">Contact</a></li>
+  </ul>
+</nav>
+<div class="body">
+  <h2 style="
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  padding: 0 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  line-height: 1.4;
+  text-shadow:
+    0 0 10px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 1s forwards ease-out;
+"
+>
+  Explore all our pet categories and discover the perfect companion waiting to be adopted – your new best friend is just a click away!
+</h2>
+
+<style>
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+
+
+
+  <div class="card-container">
+    <!-- Example: Dog Card -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/dog.png" alt="Dog" />
+          <h3>Dog</h3>
+        </div>
+        <div class="flip-card-back">
+          <h3>Dog</h3>
+          <p>Dogs are loyal and loving companions full of energy and affection.</p>
+          <a href="dog.html">See More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Example: Cat Card -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/cat.png" alt="Cat" />
+          <h3>Cat</h3>
+        </div>
+        <div class="flip-card-back">
+          <h3>Cat</h3>
+          <p>Cats are graceful, independent, and perfect for warm, quiet cuddles.</p>
+          <a href="cat.html"> See More</a>
+        </div>
+      </div>
+    </div>
+
+	<!-- Parrot -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/parrot.png" alt="Pigeon" />
+          <h3>Parrot</h3>
+        </div>
+        <div class="flip-card-back">
+          <h3>Parrot</h3>
+          <p>Graceful birds known for their homing ability and diverse varieties like Fantail and Jacobins.</p>
+          <a href="parrot.html">See More</a>
+        </div>
+      </div>
+    </div>
+    
+   <div class="card-container">
+    <!-- Pigeon -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/peigon.jpeg" alt="Pigeon" />
+          <h3>Pigeon</h3>
+        </div>
+        <div class="flip-card-back">
+          <h3>Pigeon</h3>
+          <p>Graceful birds known for their homing ability and diverse varieties like Fantail and Jacobins.</p>
+          <a href="pigeon.html">See More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rabbit  -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/rabbit.png" alt="Guinea Pig" />
+          <h3>Rabbit</h3>
+        </div>
+        <div class="flip-card-back">
+          <h3>Rabbit</h3>
+          <p>Gentle and social rodents that make wonderful indoor pets for all ages.</p>
+          <a href="rabbit.html">See More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Snake -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/snake.png" alt="Snake" />
+          <h3>Snake</h3>
+        </div>
+        <div class="flip-card-back">
+          <h3>Snake</h3>
+          <p>Fascinating reptiles loved by enthusiasts for their unique patterns and calm demeanor.</p>
+          <a href="snake.html">See More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fish -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/fish.png" alt="Fish" />
+          <h3>Fish</h3>
+        </div>
+        <div class="flip-card-back">
+          <h3>Fish</h3>
+          <p>Colorful and peaceful aquatic pets, perfect for brightening up any space.</p>
+          <a href="fish.html">See More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quail -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/quail.jpeg" alt="Quail" />
+          <h3>Quail</h3>
+        </div>
+        <div class="flip-card-back">
+          <h3>Quail</h3>
+          <p>Small game birds known for their delicate nature and charming appearance.</p>
+          <a href="quail.html">See More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Turtle -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/turtle.jpeg" alt="Turtle" />
+          <h3>Turtle</h3>
+        </div>
+        <div class="flip-card-back">
+          <h3>Turtle</h3>
+          <p>Calm and steady reptiles, excellent for peaceful pet lovers who enjoy gentle company.</p>
+          <a href="turtle.html">See More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>

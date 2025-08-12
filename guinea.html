@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guinea Categories</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+     .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    transition: background 0.3s;
+}
+
+.back-arrow:hover {
+    background: #f1f1f1;
+}
+
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 10%;
+      gap: 40px;
+      background-color: #fff;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .about-text {
+      flex: 1;
+    }
+    .about-text h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .about-text p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+    }
+    .about-media {
+      flex: 1;
+    }
+    .about-media img,
+.about-media video {
+  width: 100%;
+  height: auto; /* Maintain full image height */
+  max-height: 400px;
+  object-fit: contain; /* Ensure the full image fits without cropping */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+	/* Button 2: Glow on Hover */
+    .btn-2 {
+      background: #6a11cb;
+      background: linear-gradient(to right, #2575fc, #6a11cb);
+    }
+    .btn-2:hover {
+      box-shadow: 0 0 15px #6a11cb, 0 0 40px #2575fc;
+    }
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-text h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+   <a href="blog.html" class="back-arrow">
+    <i class="fas fa-arrow-left"></i>
+</a>
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Guinea Categories</h2>
+      <p>Meet the charming and sociable guinea breeds, small rodents prized for their friendly personalities, gentle nature, and 
+	expressive vocalizations. Each breed varies in coat type and appearance, from the smooth-coated American to the long-haired 
+	Peruvian. Guineas are ideal pets for both beginners and experienced owners, as they require minimal space and simple care routines. 
+	Their curious nature and ability to recognize owners make them delightful companions. They thrive best in pairs or groups, enjoying 
+	social interaction and gentle handling. Guinea breeds offer warmth and joy to homes with their engaging behaviors and endearing sounds.</p>
+    	
+	</div>
+    <div class="about-media">
+      <img src="images/Guinea.png" alt="Guinea Main Image">
+    </div>
+  </section>
+  
+  <section class="about-section">
+    <div class="about-text">
+      <h2>American</h2>
+      <p>Short, smooth coat, and very friendly.</p>
+	<button class="custom-btn btn-2"><span>Read More</span></button>
+    </div>
+    <div class="about-media">
+      <img src="images/guinea-1.jpg" alt="American">
+    </div>
+  </section>
+  <section class="about-section">
+    <div class="about-media">
+      <img src="images/guinea-2.jpg" alt="Abyssinian">
+    </div>
+    <div class="about-text">
+      <h2>Abyssinian</h2>
+      <p>Has rosettes and a rough coat.</p>
+	<button class="custom-btn btn-2"><span>Read More</span></button>
+    </div>
+  </section>
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Peruvian</h2>
+      <p>Long-haired and needs regular grooming.</p>
+	<button class="custom-btn btn-2"><span>Read More</span></button>
+    </div>
+    <div class="about-media">
+      <img src="images/guinea-3.jpg" alt="Peruvian">
+    </div>
+  </section>
+  <section class="about-section">
+    <div class="about-media">
+      <img src="images/guinea-4.jpg" alt="Silkie">
+    </div>
+    <div class="about-text">
+      <h2>Silkie</h2>
+      <p>Silky coat and gentle temperament.</p>
+	<button class="custom-btn btn-2"><span>Read More</span></button>
+    </div>
+  </section>
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Teddy</h2>
+      <p>Dense, springy coat like a teddy bear.</p>
+	<button class="custom-btn btn-2"><span>Read More</span></button>
+    </div>
+    <div class="about-media">
+      <img src="images/guinea-5.jpg" alt="Teddy">
+    </div>
+  </section>
+</body>
+</html>

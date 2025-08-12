@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dog Categories</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: #f8f8f8;
+      padding: 40px 20px;
+      border-radius: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-media {
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .about-media img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .about-media img:hover {
+      transform: scale(1.03);
+    }
+
+    .about-text {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .about-text h2 {
+     font-family:Georgia, 'Times New Roman', Times, serif; 
+     font-size: 3em;
+      color: rgba(134, 89, 3, 0.938);
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+
+    .custom-btn {
+      padding: 10px 20px;
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-btn:hover {
+      background-color: #ff4c4c;
+    }
+
+    .custom-btn.btn-2 span {
+      display: inline-block;
+      position: relative;
+      transition: padding-right 0.3s ease;
+    }
+
+    .custom-btn.btn-2 span::after {
+      content: '➔';
+      position: absolute;
+      right: -20px;
+      opacity: 0;
+      transition: opacity 0.3s, right 0.3s;
+    }
+
+    .custom-btn.btn-2:hover span {
+      padding-right: 25px;
+    }
+
+    .custom-btn.btn-2:hover span::after {
+      opacity: 1;
+      right: 0;
+    }
+
+    .btn-2 {
+      background: #43cea2;
+      background: linear-gradient(to right, #185a9d, #43cea2);
+    }
+
+    .btn-2:hover {
+      box-shadow: 0 0 15px #43cea2, 0 0 40px #185a9d;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;a
+      }
+
+      .about-text h2 {
+        font-size: 28px;
+      }
+	.about-text p {
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+    .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    transition: background 0.3s;
+}
+
+.back-arrow:hover {
+    background: #f1f1f1;
+}
+
+  </style>
+</head>
+<body>
+
+ <a href="blog.html" class="back-arrow">
+    <i class="fas fa-arrow-left"></i>
+</a>
+  <!-- Dog Categories Intro -->
+  <section class="about-section">
+     
+    <div class="about-text">
+      <h2 >Dog Categories</h2>
+      <p>
+        Explore the incredible diversity of dog breeds adored worldwide for their loyalty, companionship, and varied temperaments. 
+	From energetic working dogs bred for herding or hunting to calm, affectionate lapdogs, each breed brings a unique set of 
+	traits and care requirements. Whether you’re looking for a high-energy partner to join you on outdoor adventures or a gentle 
+	family pet to provide comfort and security, the perfect dog breed is waiting to become your devoted friend. Understanding their 
+	individual needs—from exercise to grooming—helps build a lifelong bond filled with joy and mutual respect.
+      </p>
+	
+    </div>
+    <div class="about-media">
+      <img src="images/Dog.png" alt="Main Dog Image">
+    </div>
+  </section>
+
+
+	<h2 style="text-align: center; font-size: 34px; margin: 40px 0 20px; color: #444; font-weight: bold; font-family: 'Segoe UI', sans-serif;  class="main-heading">🐕 Avaliable Dog Breeds Categories  </h2>
+
+ <!-- Labrador Retriever -->
+<section class="about-section">
+	<div class="about-media">
+    <img src="available pets/Dogs/Laborer.jpg" alt="Labrador Retriever">
+  	</div>
+  <div class="about-text">
+    <h2>Labrador Retriever</h2>
+    <p>
+      Meet Max – Your Loyal and Playful Best Friend!  
+      Name: Max  
+      Age: 3 years  
+      Breed: Labrador Retriever  
+      Gender: Male  
+      Color: Yellow  
+      Size: Large  
+      Personality: Friendly, Energetic, Intelligent  
+      Vaccinated: Yes  
+
+      About Max:  
+      Max is a loving and energetic Labrador Retriever who thrives on playtime, companionship, and adventure. Known for their intelligence and gentle nature, Labradors are one of the most popular dog breeds worldwide. Max enjoys daily walks, fetching games, and cuddling after a long day of fun. With a heart full of loyalty and a calm demeanor, he’s great with kids, other pets, and makes an excellent family companion. Whether you’re hiking outdoors or relaxing at home, Max will be by your side, ready to brighten your day with his affectionate personality and boundless enthusiasm.  
+    </p>
+    <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+  
+
+</section>
+
+
+  <!-- German Shepherd -->
+<section class="about-section">
+  <div class="about-text">
+    <h2>German Shepherd</h2>
+    <p>
+      Meet Tomy – Your Intelligent and Loyal Protector!  
+      Name: Tomy  
+      Age: 4 years  
+      Breed: German Shepherd  
+      Gender: Male  
+      Color: Black & Tan  
+      Size: Large  
+      Personality: Intelligent, Courageous, Protective  
+      Vaccinated: Yes  
+
+      About Tomy:  
+      Tomy is a highly intelligent and loyal German Shepherd known for his courage and protective instincts. He excels in training, enjoys active play, and thrives when given a job or task. German Shepherds are versatile working dogs, perfect for families looking for a devoted companion who is also a natural protector. Rex loves long walks, obedience training, and spending quality time with his family. He is great with older children and makes a wonderful guard dog with a loving heart.
+    </p>
+    <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+  <div class="about-media">
+    <img src="available pets/Dogs/German Shephered.jpg" alt="German Shepherd">
+  </div>
+</section>
+
+
+ <!-- Golden Retriever -->
+<section class="about-section">
+	<div class="about-media">
+    <img src="available pets/Dogs/Golden Retriever.jpg" alt="Golden Retriever">
+  </div>
+
+  <div class="about-text">
+    <h2>Golden Retriever</h2>
+    <p>
+      Meet Daisy – Your Friendly and Gentle Companion!  
+      Name: Daisy  
+      Age: 3 years  
+      Breed: Golden Retriever  
+      Gender: Female  
+      Color: Golden  
+      Size: Large  
+      Personality: Friendly, Loyal, Playful  
+      Vaccinated: Yes  
+
+      About Daisy:  
+      Daisy is a friendly and affectionate Golden Retriever with a heart full of love. Known for their gentle nature and playful spirit, Golden Retrievers are perfect family pets. Daisy enjoys swimming, fetching balls, and spending time with children. She is highly trainable, eager to please, and thrives in an active household where she can get plenty of exercise and cuddles. With Daisy, you’ll have a lifelong friend who brings joy and warmth to every moment.
+    </p>
+    <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+  
+</section>
+
+
+ <!-- Bulldog -->
+<section class="about-section">
+  <div class="about-text">
+    <h2>Bulldog</h2>
+    <p>
+      Meet Stafy – Your Calm and Loving Companion!  
+      Name: Stafy  
+      Age: 5 years  
+      Breed: Bulldog  
+      Gender: Male  
+      Color: Brindle & White  
+      Size: Medium  
+      Personality: Calm, Affectionate, Stubborn  
+      Vaccinated: Yes  
+
+      About Stafy:  
+      Stafy is a calm and affectionate Bulldog who loves lounging around and spending quality time with his humans. Bulldogs are known for their distinctive wrinkled faces, stocky build, and gentle disposition. Bruno is great with kids and enjoys short walks and lots of belly rubs. He may have a stubborn streak but makes up for it with endless loyalty and love. Bulldogs are ideal for owners looking for a relaxed, low-energy companion who enjoys the simple pleasures of life.
+    </p>
+   <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+  <div class="about-media">
+    <img src="available pets/Dogs/Bull dog.jpg" alt="Bulldog">
+  </div>
+</section>
+
+
+ <!-- Poodle -->
+<section class="about-section">
+<div class="about-media">
+    <img src="available pets/Dogs/poddle dog.jpg" alt="Poodle">
+  </div>
+  <div class="about-text">
+    <h2>Poodle</h2>
+    <p>
+      Meet Coco – Your Intelligent and Elegant Friend!  
+      Name: Coco  
+      Age: 2 years  
+      Breed: Poodle  
+      Gender: Female  
+      Color: White  
+      Size: Medium  
+      Personality: Intelligent, Active, Friendly  
+      Vaccinated: Yes  
+
+      About Coco:  
+      Coco is a highly intelligent and elegant Poodle who loves learning new tricks and staying active. Poodles are known for their hypoallergenic coats and sharp minds, making them great pets for families and individuals with allergies. Coco enjoys agility training, playtime, and cuddling with her favorite humans. With her friendly and social nature, she quickly bonds with people and other pets. If you want a smart, graceful, and loving companion, Coco is your perfect match.
+    </p>
+    <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+  
+</section>
+
+
+</body>
+</html>

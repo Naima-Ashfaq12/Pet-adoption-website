@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parrot Categories</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+     .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    transition: background 0.3s;
+}
+
+.back-arrow:hover {
+    background: #f1f1f1;
+}
+
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: #f8f8f8;
+      padding: 40px 20px;
+      border-radius: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-media {
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: center;a
+    }
+
+    .about-media img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .about-media img:hover {
+      transform: scale(1.03);
+    }
+
+    .about-text {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .about-text h2 {
+       font-family:Georgia, 'Times New Roman', Times, serif; 
+     font-size: 3em;
+      color: rgba(64, 128, 28, 0.938);
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+
+    .custom-btn {
+      padding: 10px 20px;
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-btn:hover {
+      background-color: #ff4c4c;
+    }
+
+    .custom-btn.btn-2 span {
+      display: inline-block;
+      position: relative;
+      transition: padding-right 0.3s ease;
+    }
+
+    .custom-btn.btn-2 span::after {
+      content: '➔';
+      position: absolute;
+      right: -20px;
+      opacity: 0;
+      transition: opacity 0.3s, right 0.3s;
+    }
+
+    .custom-btn.btn-2:hover span {
+      padding-right: 25px;
+    }
+
+    .custom-btn.btn-2:hover span::after {
+      opacity: 1;
+      right: 0;
+    }
+
+    .btn-2 {
+      background: #43cea2;
+      background: linear-gradient(to right, #185a9d, #43cea2);
+    }
+
+    .btn-2:hover {
+      box-shadow: 0 0 15px #43cea2, 0 0 40px #185a9d;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+ <a href="blog.html" class="back-arrow">
+    <i class="fas fa-arrow-left"></i>
+</a>
+  <!-- Parrot Intro Section -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Parrot Categories</h2>
+      <p>
+        Parrots are vibrant, intelligent, and affectionate birds that bring not only color and charm into your life but also companionship filled 
+	with joy and interaction. Renowned for their impressive talking abilities, social nature, and playful personalities, parrots are among the most 
+	captivating pet birds in the world. They thrive on attention, mental stimulation, and social bonding, often mimicking sounds, learning tricks, 
+	and forming strong emotional connections with their human caretakers. From the small and cheerful Budgerigar (Budgie) to the strikingly beautiful 
+	and expressive Macaw, each parrot species showcases a unique blend of intelligence, vocal talent, and personality. Whether you’re drawn to the clever 
+	African Grey, the lively Cockatiel, or the colorful Amazon Parrot, parrots make ideal companions for both novice and experienced bird lovers seeking a 
+	lively and engaging pet..
+      </p>
+    </div>
+    <div class="about-media">
+      <img src="images/parrot.png" alt="Parrot Family">
+    </div>
+  </section>
+
+  <!-- Heading -->
+  <h2 style="text-align: center; font-size: 34px; margin: 40px 0 20px; color: #444; font-weight: bold; font-family: 'Segoe UI', sans-serif;">
+    🦜 Available Parrot Categories
+  </h2>
+
+  <!-- African Grey Parrot -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>African Grey Parrot</h2>
+      <p>
+        Meet Einstein – The Talking Genius!  
+        Name: Einstein  
+        Age: 3 years  
+        Breed: African Grey  
+        Gender: Male  
+        Color: Grey with Scarlet Tail  
+        Personality: Intelligent, Vocal, Sensitive  
+        Vaccinated: Yes  
+
+        About Einstein:  
+        African Greys are known as the "Einsteins" of the bird world. With an incredible vocabulary and high emotional intelligence, Einstein will surprise you with his mimicry and interaction. Perfect for experienced bird lovers who enjoy bonding and communication.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Parrot/African grey parrot.jpg" alt="African Grey Parrot">
+    </div>
+  </section>
+
+  <!-- Macaw -->
+  <section class="about-section">
+    <div class="about-media">
+      <img src="available pets/Parrot/macaw.jpg" alt="Macaw Parrot">
+    </div>
+    <div class="about-text">
+      <h2>Macaw</h2>
+      <p>
+        Meet Rio – The Colorful Performer!  
+        Name: Rio  
+        Age: 2.5 years  
+        Breed: Blue & Gold Macaw  
+        Gender: Male  
+        Color: Blue, Yellow & Green  
+        Personality: Energetic, Loyal, Playful  
+        Vaccinated: Yes  
+
+        About Rio:  
+        Macaws are vibrant parrots with large wingspans and larger personalities. Rio is adventurous, loves flying, and thrives on attention and affection. Ideal for active homes with space to play and interact.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </section>
+
+  <!-- Cockatiel -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Cockatiel</h2>
+      <p>
+        Meet Sunny – The Whistling Charm!  
+        Name: Sunny  
+        Age: 1 year  
+        Breed: Cockatiel  
+        Gender: Female  
+        Color: Grey with Yellow Crest  
+        Personality: Gentle, Social, Curious  
+        Vaccinated: Yes  
+
+        About Sunny:  
+        Cockatiels are cheerful, gentle birds that enjoy whistling tunes and perching on shoulders. Sunny is affectionate and gets along well with other birds and humans. Great for beginners or families.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Parrot/Cockatial.jpg" alt="Cockatiel Parrot">
+    </div>
+  </section>
+
+  <!-- Budgerigar (Budgie) -->
+  <section class="about-section">
+    <div class="about-media">
+      <img src="available pets/Parrot/Budgie.jpg" alt="Budgerigar Budgie">
+    </div>
+    <div class="about-text">
+      <h2>Budgerigar (Budgie)</h2>
+      <p>
+        Meet Kiwi – The Little Talker!  
+        Name: Kiwi  
+        Age: 8 months  
+        Breed: Budgerigar  
+        Gender: Male  
+        Color: Green and Yellow  
+        Personality: Chatty, Smart, Playful  
+        Vaccinated: Yes  
+
+        About Kiwi:  
+        Budgies are small but mighty when it comes to personality! Kiwi is friendly, easy to train, and loves singing. Great for kids and new bird owners looking for a lively companion.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+  </section>
+
+  <!-- Amazon Parrot -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Amazon Parrot</h2>
+      <p>
+        Meet Salsa – The Singing Star!  
+        Name: Salsa  
+        Age: 4 years  
+        Breed: Yellow-Naped Amazon  
+        Gender: Female  
+        Color: Green with Yellow Crown  
+        Personality: Musical, Bold, Friendly  
+        Vaccinated: Yes  
+
+        About Salsa:  
+        Amazon parrots are known for their speech, songs, and outgoing behavior. Salsa loves to sing tunes and interact with her people. Best for homes that can provide attention and enrichment.
+      </p>
+     <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Parrot/amazon parrot.jpg" alt="Amazon Parrot">
+    </div>
+  </section>
+
+</body>
+</html>

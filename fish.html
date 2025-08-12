@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fish Categories</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+     .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    transition: background 0.3s;
+}
+
+.back-arrow:hover {
+    background: #f1f1f1;
+}
+
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+  .about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-media {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.about-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-media img:hover {
+  transform: scale(1.03);
+}
+
+.about-text {
+  flex: 1 1 300px;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.about-text h2 {
+ font-family:Georgia, 'Times New Roman', Times, serif; 
+     font-size: 3em;
+      color: rgba(238, 148, 63, 0.938);
+      margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+  white-space: pre-line; /* for line breaks */
+}
+
+/* Custom Button Styling */
+.custom-btn {
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ff4c4c;
+}
+
+.custom-btn.btn-2 span {
+  display: inline-block;
+  position: relative;
+  transition: padding-right 0.3s ease;
+}
+
+.custom-btn.btn-2 span::after {
+  content: '➔';
+  position: absolute;
+  right: -20px;
+  opacity: 0;
+  transition: opacity 0.3s, right 0.3s;
+}
+
+.custom-btn.btn-2:hover span {
+  padding-right: 25px;
+}
+
+.custom-btn.btn-2:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding: 20px 0;
+  }
+}
+
+
+	/* Button 2: Glow on Hover */
+    .btn-2 {
+      background: #6a11cb;
+      background: linear-gradient(to right, #2575fc, #6a11cb);
+    }
+    .btn-2:hover {
+      box-shadow: 0 0 15px #6a11cb, 0 0 40px #2575fc;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text h2 {
+        font-size: 28px;
+      }
+
+      .about-text p {
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+  </style>
+</head>
+<body>
+   <a href="blog.html" class="back-arrow">
+    <i class="fas fa-arrow-left"></i>
+</a>
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Fish Categories</h2>
+      <p>Immerse yourself in the tranquil and colorful world of pet fish, beloved for their graceful movements and vivid patterns 
+	that enliven any space. Whether you are building a freshwater community tank or a saltwater reef ecosystem, fish come in 
+	countless species, each with specific environmental and dietary needs. From the hardy and flamboyant bettas to peaceful 
+	tetras and majestic angelfish, fish can suit beginners and experienced aquarists alike. Aquariums not only provide a soothing 
+	visual escape but also encourage responsibility and environmental awareness. Maintaining a healthy aquatic habitat offers endless 
+	fascination and satisfaction.</p>
+	
+    </div>
+    <div class="about-media">
+      <img src="images/fish.png" alt="Fish Main Image">
+    </div>
+  </section>
+
+<!-- NEW HEADING INSERTED HERE -->
+<h2 style="text-align: center; font-size: 34px; margin: 40px 0 20px; color: #444; font-weight: bold; font-family: 'Segoe UI', sans-serif;">
+  🐟 Available Fish Categories
+</h2>
+
+
+<!-- Angelfish Section -->
+<section class="about-section">
+  <div class="about-text">
+    <h2>Angelfish</h2>
+    <p>
+      Meet Nuna – The Elegant Swimmer!  
+      Name: Nuna  
+      Age: 1 year  
+      Species: Angelfish  
+      Gender: Female  
+      Color: Silver with Black Stripes  
+      Tank Size Needed: 20+ Gallons  
+      Temperament: Peaceful, Graceful  
+      Tankmates: Ideal with calm fish (no fin-nippers)  
+    </p>
+    <p>
+	About Nuna:
+      Nuna is a striking Angelfish with flowing fins and graceful movement. She adds elegance to any aquarium with her gliding swim style. Nuna prefers a peaceful tank environment with gentle currents and tall plants to explore. She thrives on a diet of flakes, frozen bloodworms, and brine shrimp. Luna is healthy, active, and ideal for hobbyists looking to add a centerpiece fish to their collection.
+    </p>
+    <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+  <div class="about-media">
+    <img src="available pets/Fish/angle fish.jpg" alt="Angelfish">
+  </div>
+</section>
+
+<!-- Guppy Section -->
+<section class="about-section">
+  <div class="about-media">
+    <img src="available pets/Fish/guppy fish.jpg" alt="Guppy">
+  </div>
+  <div class="about-text">
+    <h2>Guppy</h2>
+    <p>
+      Meet Spark – The Colorful Charmer!  
+      Name: Spark  
+      Age: 6 months  
+      Species: Guppy  
+      Gender: Male  
+      Color: Neon Blue Tail  
+      Tank Size Needed: 10+ Gallons  
+      Temperament: Friendly, Active  
+      Tankmates: Tetras, Mollies, Corydoras  
+    </p>
+    <p>
+	About Spark:
+      Spark is a bright, active guppy with dazzling colors that will light up your aquarium. He’s very social and thrives in small schools. Spark enjoys exploring plants, swimming playfully, and showing off his vibrant tail. He’s low-maintenance and beginner-friendly, making him perfect for new fish keepers.
+    </p>
+    <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+</section>
+
+<!-- Goldfish Section -->
+<section class="about-section">
+  <div class="about-text">
+    <h2>Goldfish</h2>
+    <p>
+      Meet Bubbles – The Classic Aquatic Buddy!  
+      Name: Bubbles  
+      Age: 2 years  
+      Species: Goldfish (Comet)  
+      Gender: Unknown  
+      Color: Orange & White  
+      Tank Size Needed: 30+ Gallons  
+      Temperament: Peaceful, Social  
+      Tankmates: Same-size goldfish or peaceful species  
+    </p>
+    <p>
+	About Bubbles:
+      Bubbles is a lively and iconic goldfish who loves swimming in open spaces and greeting visitors at the glass. With proper filtration and care, Bubbles can live a long, happy life. He enjoys leafy greens, pellets, and occasional treats. A wonderful pet for kids or community tanks!
+    </p>
+    <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+  <div class="about-media">
+    <img src="available pets/Fish/gold fish.jpg" alt="Goldfish">
+  </div>
+</section>
+
+<!-- Betta Section -->
+<section class="about-section">
+  <div class="about-media">
+    <img src="available pets/Fish/betta fish.jpg" alt="Betta Fish">
+  </div>
+  <div class="about-text">
+    <h2>Betta</h2>
+    <p>
+      Meet Blaze – The Bold Beauty!  
+      Name: Blaze  
+      Age: 8 months  
+      Species: Betta Splendens  
+      Gender: Male  
+      Color: Deep Red & Blue  
+      Tank Size Needed: 5+ Gallons  
+      Temperament: Territorial, Intelligent  
+      Tankmates: Solo or with snails/shrimp (no fin-nippers)  
+    </p>
+    <p>
+	About Blaze:
+      Blaze is a vibrant betta with a fiery personality and royal colors. He loves interacting with his environment, swimming through plants, and watching human activity. Blaze thrives in a warm, clean tank with hiding spots and low-flow filters. Perfect for desktop aquariums and solo displays.
+    </p>
+   <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+</section>
+
+
+
+
+
+  
+</body>
+</html>

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+
+    box-shadow: 0 0 30px rgba(227, 228, 237, 0.37);
+    backdrop-filter: blur(30px); /* Creates the frosted glass effect */
+    
+    border: 2px solid rgba(255, 255, 255, 0.18); /* Optional border */
+    background-color: #f3c073;
+    position: relative;
+    z-index: 1; /* Ensure the navbar stays on top */
+}
+.logo h1 {
+  color: #a52a2a;
+  font-size: 1.8em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #5d4037;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 10%;
+  background-color: #fff;
+}
+
+.about-section h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #5d4037;
+  margin-bottom: 10px;
+}
+
+.about-section .intro {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text {
+  flex: 1 1 55%;
+}
+
+.about-text h2 {
+  color: #f3c073;
+  margin-top: 20px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.about-image {
+  flex: 1 1 40%;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .about-image {
+    flex: 1 1 100%;
+  }
+
+  .about-section h1 {
+    font-size: 2.5em;
+  }
+}

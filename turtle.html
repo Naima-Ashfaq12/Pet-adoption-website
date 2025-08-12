@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Turtle Categories</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+     .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    transition: background 0.3s;
+}
+
+.back-arrow:hover {
+    background: #f1f1f1;
+}
+
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      padding: 40px 20px;
+      border-radius: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .about-media {
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: center;
+    }
+    .about-media img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease-in-out;
+    }
+    .about-media img:hover {
+      transform: scale(1.03);
+    }
+    .about-text {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 20px;
+    }
+    .about-text h2 {
+       font-family:Georgia, 'Times New Roman', Times, serif; 
+     font-size: 3em;
+      color: rgba(82, 185, 113, 0.938);
+      margin-bottom: 15px;
+    }
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #34495e;
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+    .custom-btn {
+      padding: 10px 20px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .custom-btn:hover {
+      background-color: #219150;
+    }
+    .custom-btn.btn-2 span {
+      display: inline-block;
+      position: relative;
+      transition: padding-right 0.3s ease;
+    }
+    .custom-btn.btn-2 span::after {
+      content: '➔';
+      position: absolute;
+      right: -20px;
+      opacity: 0;
+      transition: opacity 0.3s, right 0.3s;
+    }
+    .custom-btn.btn-2:hover span {
+      padding-right: 25px;
+    }
+    .custom-btn.btn-2:hover span::after {
+      opacity: 1;
+      right: 0;
+    }
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-text h2 {
+        font-size: 28px;
+      }
+    }
+    h2.main-heading {
+      text-align: center;
+      font-size: 34px;
+      margin: 40px 0 20px;
+      color: #2c3e50;
+      font-weight: bold;
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
+</head>
+<body>
+   <a href="blog.html" class="back-arrow">
+    <i class="fas fa-arrow-left"></i>
+</a>
+
+  <!-- Turtle Intro Section -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Turtle Categories</h2>
+      <p>
+       Turtles are ancient, remarkable reptiles admired for their distinctive shells, peaceful demeanor, and long lifespans, making them fascinating lifelong companions. Whether you prefer aquatic species that gracefully swim through tanks or terrestrial varieties that leisurely roam in enclosures, turtles offer a unique pet experience unlike any other. Each turtle breed—from the vibrant Red-Eared Slider to the sturdy Box Turtle—has its own care requirements, habitat preferences, and captivating personality. These low-maintenance pets thrive with consistent care, proper lighting, and a well-balanced diet. Their slow, thoughtful movements and gentle nature provide a calming presence, making turtles ideal for families, students, and animal lovers of all ages. Dive into the world of these shelled wonders and explore the diversity among popular turtle species that can bring serenity and curiosity to your home or garden.
+      </p>
+    </div>
+    <div class="about-media">
+      <img src="images/turtle.jpeg" alt="Various Turtles" />
+    </div>
+  </section>
+
+  <h2 class="main-heading">🐢 Available Turtle Categories</h2>
+
+  <!-- Red-Eared Slider -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Red-Eared Slider</h2>
+      <p>
+        Meet Ruby – The Active Swimmer!  
+        Name: Ruby  
+        Age: 2 years  
+        Breed: Red-Eared Slider  
+        Gender: Female  
+        Color: Green with Red Mark near Eyes  
+        Personality: Energetic, Social, Curious  
+        Vaccinated: N/A  
+
+        About Ruby:  
+        Red-Eared Sliders are popular aquatic turtles known for their distinctive red ear markings. Ruby loves basking under the lamp and exploring her aquatic environment.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Turtle/Red eared.jpg" alt="Red-Eared Slider Turtle" />
+    </div>
+  </section>
+
+  <!-- Box Turtle -->
+  <section class="about-section">
+    <div class="about-media">
+      <img src="available pets/Turtle/box.jpg" alt="Box Turtle" />
+    </div>
+    <div class="about-text">
+      <h2>Box Turtle</h2>
+      <p>
+        Meet Bruno – The Forest Wanderer!  
+        Name: Bruno  
+        Age: 5 years  
+        Breed: Box Turtle  
+        Gender: Male  
+        Color: Brown with Yellow Patterns  
+        Personality: Shy, Terrestrial, Gentle  
+        Vaccinated: N/A  
+
+        About Bruno:  
+        Box turtles are terrestrial turtles with domed shells and are known for their ability to completely close their shells. Bruno prefers quiet forest-like habitats.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+  </section>
+
+  <!-- Painted Turtle -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Painted Turtle</h2>
+      <p>
+        Meet Penny – The Colorful Cruiser!  
+        Name: Penny  
+        Age: 3 years  
+        Breed: Painted Turtle  
+        Gender: Female  
+        Color: Olive Green with Red and Yellow Markings  
+        Personality: Friendly, Active, Hardy  
+        Vaccinated: N/A  
+
+        About Penny:  
+        Painted turtles are known for their beautiful bright markings on their shells and skin. Penny enjoys swimming and sunbathing.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Turtle/painted.jpg" alt="Painted Turtle" />
+    </div>
+  </section>
+
+  <!-- Snapping Turtle -->
+  <section class="about-section">
+    <div class="about-media">
+      <img src="available pets/Turtle/snapping.jpg" alt="Snapping Turtle" />
+    </div>
+    <div class="about-text">
+      <h2>Snapping Turtle</h2>
+      <p>
+        Meet Spike – The Strong Defender!  
+        Name: Spike  
+        Age: 4 years  
+        Breed: Snapping Turtle  
+        Gender: Male  
+        Color: Dark Brown with Rough Shell  
+        Personality: Powerful, Protective, Reserved  
+        Vaccinated: N/A  
+
+        About Spike:  
+        Snapping turtles have strong jaws and a rugged shell. Spike needs a spacious aquatic habitat and is best suited for experienced keepers.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+  </section>
+
+  <!-- Map Turtle -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Map Turtle</h2>
+      <p>
+        Meet Maples – The Patterned Navigator!  
+        Name: Maples  
+        Age: 3 years  
+        Breed: Map Turtle  
+        Gender: Female  
+        Color: Olive with Map-like Patterns on Shell  
+        Personality: Active, Social, Intelligent  
+        Vaccinated: N/A  
+
+        About Maples:  
+        Map turtles get their name from the unique map-like patterns on their shells. Maples is an excellent swimmer and enjoys interaction.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Turtle/map.jpg" alt="Map Turtle" />
+    </div>
+  </section>
+
+</body>
+</html>

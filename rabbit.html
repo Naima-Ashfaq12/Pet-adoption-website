@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rabbit Categories</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+     .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    transition: background 0.3s;
+}
+
+.back-arrow:hover {
+    background: #f1f1f1;
+}
+
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+  .about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-media {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.about-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-media img:hover {
+  transform: scale(1.03);
+}
+
+.about-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.about-text h2 {
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+     font-size: 3em;
+      color: rgb(163, 163, 137);
+      margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+  white-space: pre-line; /* for line breaks */
+}
+
+/* Custom Button Styling */
+.custom-btn {
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ff4c4c;
+}
+
+.custom-btn.btn-2 span {
+  display: inline-block;
+  position: relative;
+  transition: padding-right 0.3s ease;
+}
+
+.custom-btn.btn-2 span::after {
+  content: '➔';
+  position: absolute;
+  right: -20px;
+  opacity: 0;
+  transition: opacity 0.3s, right 0.3s;
+}
+
+.custom-btn.btn-2:hover span {
+  padding-right: 25px;
+}
+
+.custom-btn.btn-2:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding: 20px 0;
+  }
+}
+
+
+	/* Button 2: Glow on Hover */
+    .btn-2 {
+      background: #6a11cb;
+      background: linear-gradient(to right, #2575fc, #6a11cb);
+    }
+    .btn-2:hover {
+      box-shadow: 0 0 15px #6a11cb, 0 0 40px #2575fc;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;a
+      }
+
+      .about-text h2 {
+        font-size: 28px;
+      }
+
+      .about-text p {
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+  </style>
+</head>
+<body>
+ <a href="blog.html" class="back-arrow">
+    <i class="fas fa-arrow-left"></i>
+</a>
+  <!-- Rabbit Categories Intro -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Rabbit Categories</h2>
+      <p>
+        Step into the gentle and affectionate world of rabbits, beloved for their soft fur, twitching noses, and calm demeanor. 
+	Rabbits come in a variety of breeds, sizes, and coat types, each with unique grooming and dietary needs. Known for their 
+	social nature, rabbits thrive in environments where they receive plenty of attention and safe space to explore. Their quiet, 
+	peaceful presence makes them ideal pets for both families and individuals seeking a low-maintenance but deeply rewarding companion. 
+	With proper care and patience, rabbits can form strong emotional bonds and provide endless joy with their curious and playful behavior.
+      </p>
+	
+    </div>
+    <div class="about-media">
+      <img src="images/rabbit.png" alt="Main Rabbit Image">
+    </div>
+  </section>
+
+	<!-- NEW HEADING INSERTED HERE -->
+<h2 style="text-align: center; font-size: 34px; margin: 40px 0 20px; color: #444; font-weight: bold; font-family: 'Segoe UI', sans-serif;">
+  🐇 Available Rabbit Categories
+</h2>
+
+  <!-- Holland Lop -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Holland Lop</h2>
+      <p>
+       Meet Bella – Your Perfect Bunny Companion!
+	Name: Bella
+	Age: 1.5 years
+	Breed: Holland Lop
+	Gender: Female
+	Color: Light Brown & White
+	Size: Small
+	Personality: Gentle, Curious, Low-Maintenance
+	Vaccinated: Yes
+
+	About Bella:
+	Bella is a sweet and affectionate Holland Lop rabbit with incredibly soft fur and bright, curious eyes. She enjoys lounging on soft 
+	bedding, nibbling on hay and leafy greens, and occasionally savoring a treat like apple slices or carrots. Bella is litter-trained, 
+	clean, and enjoys a peaceful indoor environment with space to explore and hop around. She loves cozy corners, quiet playtime, and gentle 
+	strokes behind her ears. Bella gets along well with calm children and quiet pets. She’s the ideal companion for anyone seeking a loving, 
+	easy-to-care-for pet. Give Bella a warm, safe home—and she’ll reward you with endless love and cuddles!
+      </p>
+	<a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Rabbits/holland lop.jpg" alt="Holland Lop">
+    </div>
+  </section>
+
+  <!-- Mini Rex -->
+  <section class="about-section">
+    <div class="about-media">
+      <img src="available pets/Rabbits/Mini rex.jpg" alt="Mini Rex">
+    </div>
+    <div class="about-text">
+      <h2>Mini Rex</h2>
+      <p>
+    	Meet Milo – Your Future Furry Friend!
+	Name: Milo
+	Age: 2 years
+	Breed: Domestic Short Hair
+	Gender: Male
+	Color: Orange & White
+	Size: Medium
+	Personality: Affectionate, Curious, Playful
+	Vaccinated: Yes
+
+	About Milo:
+	Milo is a gentle and playful cat with a heart full of love. He enjoys lounging in sunny spots, chasing feather toys, and curling up on laps 
+	for nap time. He’s very social and loves being around people and other pets. Milo would thrive in a calm, loving home where he can be pampered 
+	with cuddles and treats.
+      </p>
+	<a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+  </section>
+
+  <!-- Netherland Dwarf -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Netherland Dwarf</h2>
+      <p>
+       Meet Nibbles – The Tiny Bundle of Energy!
+	Name: Nibbles
+	Age: 1 year
+	Breed: Netherland Dwarf
+	Gender: Male
+	Color: Gray & White
+	Size: Extra Small
+	Personality: Energetic, Alert, Curious
+	Vaccinated: Yes
+
+	About Nibbles:
+	Nibbles is a petite and lively Netherland Dwarf rabbit with a big personality packed into a tiny frame. He’s full of curiosity and loves 
+	exploring every nook and cranny of his space. Nibbles enjoys munching on fresh greens, burrowing in soft hay, and playing with chew-safe toys. 
+	He’s best suited for a gentle, patient owner who can provide a calm environment and plenty of enrichment. Nibbles is litter-trained, healthy, 
+	and does well with quiet, older children or solo rabbit-lovers. If you’re ready to add some energy and joy to your life, Nibbles is waiting to 
+	hop into your heart!
+
+
+      </p>
+	<a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Rabbits/netherland.jpg" alt="Netherland Dwarf">
+    </div>
+  </section>
+
+  <!-- Flemish Giant -->
+<section class="about-section">
+  <div class="about-media">
+    <img src="available pets/Rabbits/Flemish giant.jpg" alt="Flemish Giant">
+  </div>
+  <div class="about-text">
+    <h2>Flemish Giant</h2>
+    <p>
+      Meet Thumper – The Gentle Giant You'll Love!  
+      Name: Thumper  
+      Age: 3 years  
+      Breed: Flemish Giant  
+      Gender: Male  
+      Color: Sandy Brown  
+      Size: Extra Large  
+      Personality: Calm, Friendly, Laid-back  
+      Vaccinated: Yes  
+
+      About Thumper:  
+      Thumper is a majestic Flemish Giant rabbit known for his massive size and mellow temperament. He enjoys slow-paced, relaxing days filled with stretching out on cozy bedding, snacking on hay and veggies, and quietly observing his surroundings. Despite his size, Thumper is incredibly gentle and affectionate, making him great for families, including homes with children and other calm pets. He’s fully litter-trained and enjoys daily grooming and human interaction. Thumper would thrive in a spacious indoor setup where he can move freely and be part of the family.  
+      Bring home Thumper, and you'll gain a loyal, loving companion who adores attention and comfort!
+    </p>
+   <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+  </div>
+</section>
+
+  <!-- Lionhead Rabbit -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Lionhead Rabbit</h2>
+      <p>
+        Meet Luna – The Gentle Giant You’ll Love!
+	Name: Luna
+	Age: 3 years
+	Breed: Lionhead Rabbit
+	Gender: Female
+	Color: White with Gray Highlights
+	Size: Small
+	Personality: Playful, Curious, Affectionate
+	Vaccinated: Yes
+
+	About Thumper:
+	Luna is a majestic Lionhead Rabbit known for his massive size and mellow temperament. He enjoys slow-paced, relaxing days 
+	filled with stretching out on cozy bedding, snacking on hay and veggies, and quietly observing his surroundings. Despite his size, 
+	Thumper is incredibly gentle and affectionate, making him great for families, including homes with children and other calm pets. He’s 
+	fully litter-trained and enjoys daily grooming and human interaction. Thumper would thrive in a spacious indoor setup where he can move 
+	freely and be part of the family. Bring home Thumper, and you'll gain a loyal, loving companion who adores attention and comfort!
+      </p>
+	<a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Rabbits/lion head.jpg" alt="Lionhead Rabbit">
+    </div>
+  </section>
+
+</body>
+</html>

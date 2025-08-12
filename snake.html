@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snake Categories</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+     .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    transition: background 0.3s;
+}
+
+.back-arrow:hover {
+    background: #f1f1f1;
+}
+
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: #f8f8f8;
+      padding: 40px 20px;
+      border-radius: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-media {
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .about-media img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .about-media img:hover {
+      transform: scale(1.03);
+    }
+
+    .about-text {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .about-text h2 {
+       font-family:Georgia, 'Times New Roman', Times, serif; 
+     font-size: 3em;
+      color: rgba(207, 24, 24, 0.938);
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+
+    .custom-btn {
+      padding: 10px 20px;
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-btn:hover {
+      background-color: #ff4c4c;
+    }
+
+    .custom-btn.btn-2 span {
+      display: inline-block;
+      position: relative;
+      transition: padding-right 0.3s ease;
+    }
+
+    .custom-btn.btn-2 span::after {
+      content: '➔';
+      position: absolute;
+      right: -20px;
+      opacity: 0;
+      transition: opacity 0.3s, right 0.3s;
+    }
+
+    .custom-btn.btn-2:hover span {
+      padding-right: 25px;
+    }
+
+    .custom-btn.btn-2:hover span::after {
+      opacity: 1;
+      right: 0;
+    }
+
+    .btn-2 {
+      background: #43cea2;
+      background: linear-gradient(to right, #185a9d, #43cea2);
+    }
+
+    .btn-2:hover {
+      box-shadow: 0 0 15px #43cea2, 0 0 40px #185a9d;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+ <a href="blog.html" class="back-arrow">
+    <i class="fas fa-arrow-left"></i>
+</a>
+  <!-- Snake Intro Section -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Snake Categories</h2>
+      <p>
+        Snakes are mesmerizing reptiles admired for their sleek bodies, diverse patterns, and silent, graceful movements. With a wide range of sizes, colors, and temperaments, snakes appeal to both novice and experienced reptile enthusiasts. Many species—such as the docile Corn Snake or the majestic Ball Python—are known for their calm demeanor and adaptability, making them excellent pets. These cold-blooded companions are relatively low-maintenance, requiring minimal space, regular feeding, and a suitable enclosure to thrive. Beyond their exotic appearance, snakes exhibit fascinating behaviors, from shedding their skin to their unique methods of hunting and exploring their environment. Whether you're looking for a beginner-friendly pet or a striking addition to your reptile collection, these popular snake species offer a captivating and rewarding ownership experience.
+      </p>
+    </div>
+    <div class="about-media">
+      <img src="images/snake.png" alt="Various Snakes">
+    </div>
+  </section>
+
+  <!-- Heading -->
+  <h2 style="text-align: center; font-size: 34px; margin: 40px 0 20px; color: #444; font-weight: bold; font-family: 'Segoe UI', sans-serif;">
+    🐍 Available Snake Categories
+  </h2>
+
+  <!-- Corn Snake -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Corn Snake</h2>
+      <p>
+        Meet Ember – The Gentle Slider!  
+        Name: Ember  
+        Age: 2 years  
+        Breed: Corn Snake  
+        Gender: Female  
+        Color: Orange and Red Patterned  
+        Personality: Docile, Curious, Easy to Handle  
+        Vaccinated: N/A  
+
+        About Ember:  
+        Corn snakes are one of the best beginner snakes. They’re calm, easy to care for, and rarely aggressive. Ember enjoys climbing and exploring her habitat.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Snakes/Corn snake.jpg" alt="Corn Snake">
+    </div>
+  </section>
+
+  <!-- Ball Python -->
+  <section class="about-section">
+    <div class="about-media">
+      <img src="available pets/Snakes/Ball phyton.jpg" alt="Ball Python">
+    </div>
+    <div class="about-text">
+      <h2>Ball Python</h2>
+      <p>
+        Meet Una – The Calm Curler!  
+        Name: Una  
+        Age: 3 years  
+        Breed: Ball Python  
+        Gender: Female  
+        Color: Dark Brown with Yellow Markings  
+        Personality: Shy, Calm, Low Maintenance  
+        Vaccinated: N/A  
+
+        About Luna:  
+        Ball pythons are known for curling into a ball when threatened. Una is gentle and well-suited for snake enthusiasts who prefer a quieter pet.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+  </section>
+
+  <!-- King Snake -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>King Snake</h2>
+      <p>
+        Meet Rex – The Bold Conqueror!  
+        Name: Rex  
+        Age: 1.5 years  
+        Breed: King Snake  
+        Gender: Male  
+        Color: Black with White Bands  
+        Personality: Active, Hardy, Friendly  
+        Vaccinated: N/A  
+
+        About Rex:  
+        King snakes are popular for their striking patterns and robust health. Rex loves to explore and is known for his fearless nature.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Snakes/king snake.jpg" alt="King Snake">
+    </div>
+  </section>
+
+  <!-- Garter Snake -->
+  <section class="about-section">
+    <div class="about-media">
+      <img src="available pets/Snakes/garter.jpg" alt="Garter Snake">
+    </div>
+    <div class="about-text">
+      <h2>Garter Snake</h2>
+      <p>
+        Meet Stripe – The Streamlined Swift!  
+        Name: Stripe  
+        Age: 1 year  
+        Breed: Garter Snake  
+        Gender: Female  
+        Color: Green with Yellow Stripes  
+        Personality: Active, Friendly, Hardy  
+        Vaccinated: N/A  
+
+        About Stripe:  
+        Garter snakes are small and agile, often found near water. Stripe is a lively companion and adapts well to various environments.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+  </section>
+
+  <!-- Boa Constrictor -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Boa Constrictor</h2>
+      <p>
+        Meet Titan – The Powerful Protector!  
+        Name: Titan  
+        Age: 4 years  
+        Breed: Boa Constrictor  
+        Gender: Male  
+        Color: Brown with Red Patterns  
+        Personality: Calm, Strong, Intelligent  
+        Vaccinated: N/A  
+
+        About Titan:  
+        Boa constrictors are large, muscular snakes that are gentle if handled properly. Titan is a majestic pet requiring experienced care.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Snakes/boa.jpg" alt="Boa Constrictor">
+    </div>
+  </section>
+
+</body>
+</html>

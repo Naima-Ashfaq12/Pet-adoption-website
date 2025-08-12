@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav, .banner {
+    position: relative;
+    z-index: 1;
+}
+body {
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+
+    box-shadow: 0 0 30px rgba(227, 228, 237, 0.37);
+    backdrop-filter: blur(30px); /* Creates the frosted glass effect */
+    
+    border: 2px solid rgba(255, 255, 255, 0.18); /* Optional border */
+    background-color: #f3c073;
+    position: relative;
+    z-index: 1; /* Ensure the navbar stays on top */
+}
+
+.logo {
+    font-size: larger;
+    color: brown;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5d4037;
+    font-weight: 600;
+     padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.contact-section {
+  background: #fff;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5em;
+  color: #5d4037;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 16px;
+  font-size: 1em;
+  border: 1px solid #ffb74d;
+  border-radius: 6px;
+  resize: none;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: #ffb74d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #dd4416;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pigeon Categories</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+     .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    transition: background 0.3s;
+}
+
+.back-arrow:hover {
+    background: #f1f1f1;
+}
+
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: #f8f8f8;
+      padding: 40px 20px;
+      border-radius: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-media {
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .about-media img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .about-media img:hover {
+      transform: scale(1.03);
+    }
+
+    .about-text {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .about-text h2 {
+       font-family:Georgia, 'Times New Roman', Times, serif; 
+     font-size: 3em;
+      color: rgba(58, 150, 236, 0.938);
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+
+    .custom-btn {
+      padding: 10px 20px;
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-btn:hover {
+      background-color: #ff4c4c;
+    }
+
+    .custom-btn.btn-2 span {
+      display: inline-block;
+      position: relative;
+      transition: padding-right 0.3s ease;
+    }
+
+    .custom-btn.btn-2 span::after {
+      content: '➔';
+      position: absolute;
+      right: -20px;
+      opacity: 0;
+      transition: opacity 0.3s, right 0.3s;
+    }
+
+    .custom-btn.btn-2:hover span {
+      padding-right: 25px;
+    }
+
+    .custom-btn.btn-2:hover span::after {
+      opacity: 1;
+      right: 0;
+    }
+
+    .btn-2 {
+      background: #6a11cb;
+      background: linear-gradient(to right, #2575fc, #6a11cb);
+    }
+
+    .btn-2:hover {
+      box-shadow: 0 0 15px #6a11cb, 0 0 40px #2575fc;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text h2 {
+        font-size: 28px;
+      }
+
+      .about-text p {
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+  </style>
+</head>
+<body>
+ <a href="blog.html" class="back-arrow">
+    <i class="fas fa-arrow-left"></i>
+</a>
+  <!-- Pigeon Categories Intro -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Pigeon Categories</h2>
+      <p>
+       Enter the graceful and intelligent world of pigeons—feathered companions admired for their loyalty, gentle disposition, and captivating beauty. 
+	Pigeons are incredibly adaptable and social creatures, often underestimated in their charm and companionship potential. These birds come in a wide 
+	range of unique breeds, each showcasing its own distinct feather patterns, colors, and personalities. From the remarkable navigational skills of 
+	Homing Pigeons to the elegant flair of ornamental breeds like Fantails and Jacobins, pigeons have fascinated bird enthusiasts for centuries. Easy 
+	to care for and deeply affectionate when raised with love and patience, they can recognize their owners, show affection, and even form lasting bonds. 
+	With ample space to fly, proper nourishment, and regular interaction, pigeons can become peaceful, intelligent companions that add a touch of serenity 
+	and wonder to any home.
+	
+      </p>
+    </div>
+    <div class="about-media">
+      <img src="images/peigon.jpeg" alt="Main Pigeon Image">
+    </div>
+  </section>
+
+  <!-- Heading -->
+  <h2 style="text-align: center; font-size: 34px; margin: 40px 0 20px; color: #444; font-weight: bold; font-family: 'Segoe UI', sans-serif;">
+    🕊️ Available Pigeon Categories
+  </h2>
+
+  <!-- Homing Pigeon Fantail -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Homing Pigeon Fantail</h2>
+      <p>
+        Meet Sky – The Elegant Messenger!
+        Name: Sky  
+        Age: 1 year  
+        Breed: Homing Pigeon Fantail  
+        Gender: Male  
+        Color: Pearl White  
+        Size: Medium  
+        Personality: Intelligent, Loyal, Calm  
+        Vaccinated: Yes  
+
+        About Sky:  
+        Sky is a graceful homing pigeon with stunning fantail feathers and remarkable homing instincts. He's highly trainable, calm, and enjoys gentle handling. Sky thrives in open aviaries and makes a peaceful, ornamental addition to any bird lover's family.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Piegon/homing fantail.jpg" alt="Homing Pigeon Fantail">
+    </div>
+  </section>
+
+  <!-- Lahore -->
+  <section class="about-section">
+    <div class="about-media">
+      <img src="available pets/Piegon/lahore.jpg" alt="Lahore Pigeon">
+    </div>
+    <div class="about-text">
+      <h2>Lahore Pigeon</h2>
+      <p>
+        Meet Noor – The Showstopper Beauty!  
+        Name: Noor  
+        Age: 2 years  
+        Breed: Lahore  
+        Gender: Female  
+        Color: White with Black Markings  
+        Size: Large  
+        Personality: Docile, Friendly, Stylish  
+        Vaccinated: Yes  
+
+        About Noor:  
+        Noor is a visually striking Lahore pigeon, known for her luxurious feathers and calm behavior. She loves sunbathing and showing off her regal stance. Ideal for pigeon enthusiasts who appreciate rare and exquisite breeds.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+  </section>
+
+  <!-- Jacobins -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Jacobins</h2>
+      <p>
+        Meet Prince – The Feathered Royalty!  
+        Name: Prince  
+        Age: 1.5 years  
+        Breed: Jacobin  
+        Gender: Male  
+        Color: White & Brown  
+        Size: Medium  
+        Personality: Proud, Quiet, Unique  
+        Vaccinated: Yes  
+
+        About Prince:  
+        Prince stands out with his ornate feathered hood that surrounds his head, giving him a royal and mysterious look. Jacobins are admired in pigeon shows and by collectors for their elegance. Prince prefers calm spaces and is best suited for experienced bird handlers.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Piegon/Jacobin.jpg" alt="Jacobins Pigeon">
+    </div>
+  </section>
+
+  <!-- Indian Fantail -->
+  <section class="about-section">
+    <div class="about-media">
+      <img src="available pets/Piegon/indian fantail.jpg" alt="Indian Fantail Pigeon">
+    </div>
+    <div class="about-text">
+      <h2>Indian Fantail</h2>
+      <p>
+        Meet Snowflake – The Charming Dancer!  
+        Name: Snowflake  
+        Age: 2 years  
+        Breed: Indian Fantail  
+        Gender: Female  
+        Color: Pure White  
+        Size: Medium  
+        Personality: Elegant, Active, Sweet  
+        Vaccinated: Yes  
+
+        About Snowflake:  
+        Snowflake has a beautiful upright stance, fan-shaped tail, and loves to strut gracefully. Her soft cooing and calm nature make her a delightful pet for both novice and seasoned bird owners. She's great for aviaries or decorative indoor coops.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+nav {
+  background-color: #f3c073;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  box-shadow: 0 0 30px rgba(227, 228, 237, 0.37);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+  z-index: 1;
+}
+
+.logo h1 {
+  font-size: 1.8em;
+  color: brown;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #4e342e;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #3e2723;
+}
+ .body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.8;
+      margin: 0;
+      padding: 40px 10%;
+      background: linear-gradient(to right, #fef9f9, #f8f8ff);
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #ff6f61;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 50px;
+      color: #1d3557;
+      border-left: 6px solid #ff6f61;
+      padding-left: 15px;
+      background-color: #fff3f0;
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
+    h3 {
+      font-size: 1.4rem;
+      margin-top: 30px;
+      color: #457b9d;
+      border-bottom: 2px dashed #ddd;
+      padding-bottom: 5px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+      color: #444;
+      text-align: justify;
+    }
+   .ser ul {
+      padding-left: 25px;
+      font-size: 1.05rem;
+      margin-bottom: 20px;
+    }
+    .ser li {
+      margin-bottom: 10px;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 30px 0;
+      padding-left: 20px;
+      border-left: 5px solid #ff6f61;
+      color: #555;
+      background-color: #fff8f6;
+      padding: 15px 20px;
+      border-radius: 5px;
+    }
+    .adopt-button {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0;
+      padding: 14px 35px;
+      font-size: 1.2rem;
+      background-color: #ff6f61;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .adopt-button:hover {
+      background-color: #e5503d;
+      transform: scale(1.05);
+    }
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 30px 5%;
+      }
+      h1 {
+        font-size: 2.4rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+    }

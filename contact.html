@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Adopt a Pet - PawFect</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  nav, .banner {
+    position: relative;
+    z-index: 1;
+  }
+  body {
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    box-shadow: 0 0 30px rgba(227, 228, 237, 0.37);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    background-color: #f3c073;
+    position: relative;
+    z-index: 1;
+  }
+  .logo {
+    font-size: larger;
+    color: brown;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #5d4037;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .contact-section {
+    background: #fff;
+    padding: 60px 10%;
+    text-align: center;
+  }
+  .contact-section h2 {
+    font-size: 2.5em;
+    color: #5d4037;
+    margin-bottom: 10px;
+  }
+  .contact-section p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact-form input {
+    padding: 12px 16px;
+    font-size: 1em;
+    border: 1px solid #ffb74d;
+    border-radius: 6px;
+    width: 100%;
+  }
+  .contact-form button {
+    background-color: #ffb74d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .contact-form button:hover {
+    background-color: #dd4416;
+  }
+
+  /* Dialog styles with left message and right image */
+  #adoptDialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 520px;
+    max-width: 90%;
+    background: linear-gradient(135deg, #ffb74d 0%, #dd4416 100%);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(221, 68, 22, 0.6);
+    padding: 30px 25px 40px 25px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    z-index: 9999;
+
+    opacity: 0;
+    transform: translate(-50%, -60%) scale(0.8);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+  #adoptDialog.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    display: flex;
+  }
+
+  .dialog-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .message {
+    flex: 1;
+    text-align: left;
+  }
+
+  .message h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .message p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  }
+
+  .message button {
+    margin-top: 10px;
+    background-color: white;
+    color: #dd4416;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(221, 68, 22, 0.6);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .message button:hover {
+    background-color: #dd4416;
+    color: white;
+  }
+
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #petImage {
+    max-width: 180px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    display: block;
+  }
+
+  /* Overlay with smooth fade */
+  #dialogOverlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+    z-index: 9998;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  #dialogOverlay.show {
+    display: block;
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">
+    <h1>PawFect</h1>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="blog.html">Categories</a></li>
+    <li><a href="contact.html" class="contact-link">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <h2>Adopt a Pet</h2>
+    <p>Tell us the name of the pet you'd like to adopt!</p>
+    <form class="contact-form" id="adoptForm">
+      <input type="text" id="petName" name="petName" placeholder="Name of the Pet You Want to Adopt" required />
+      <input type="text" id="yourName" name="yourName" placeholder="Your Name" required />
+      <input type="email" id="yourEmail" name="yourEmail" placeholder="Your Email" required />
+      <input type="tel" id="yourPhone" name="yourPhone" placeholder="Your Phone Number" required />
+      <button type="submit" class="explore-btn">Adopt Me</button>
+    </form>
+  </div>
+</section>
+
+<!-- Dialog box and overlay -->
+<div id="dialogOverlay"></div>
+<div id="adoptDialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle">
+  <div class="dialog-content">
+    <div class="message">
+      <h3 id="dialogTitle">Congratulations!</h3>
+      <p id="congratsText"></p>
+      <button id="closeDialog">Close</button>
+    </div>
+    <div class="image-container">
+      <img id="petImage" src="" alt="Adopted Pet Image" />
+    </div>
+  </div>
+</div>
+
+<script>
+// Pet images dictionary - keys all lowercase
+const petImages = {
+  "ruby": "available pets/Turtle/Red eared.jpg", 
+  "luna": "available pets/Rabbits/lion head.jpg",
+  "thumper ": "available pets/Rabbits/Flemish giant.jpg",
+  "nibbles": "available pets/Rabbits/netherland.jpg",
+  "bella": "available pets/Rabbits/holland lop.jpg",
+  "milo": "available pets/Rabbits/Mini rex.jpg", // example image local path
+   "bruno": "available pets/Turtle/box.jpg", 
+   "penny": "available pets/Turtle/painted.jpg", 
+   "spike": "available pets/Turtle/snapping.jpg", 
+   "maples": "available pets/Turtle/map.jpg", 
+   "ember": "available pets/Snakes/Corn snake.jpg", 
+   "una": "available pets/Snakes/Ball phyton.jpg", 
+   "rex": "available pets/Snakes/king snake.jpg", 
+   "stripe": "available pets/Snakes/garter.jpg", 
+   "titan": "available pets/Snakes/boa.jpg", 
+   "speckles": "available pets/Quail/couturnix.jpg", 
+   "scout": "available pets/Quail/bob white.jpg", 
+   "pebble": "available pets/Quail/california.jpg", 
+   "dotty": "available pets/Quail/button.jpg", 
+   "mochi": "available pets/Quail/japanese.jpg", 
+   "sky": "available pets/Piegon/homing fantail.jpg", 
+   "noor": "available pets/Piegon/lahore.jpg", 
+   "prince": "available pets/Piegon/Jacobin.jpg", 
+   "snowflake": "available pets/Piegon/indian fantail.jpg", 
+   "einstein": "available pets/Parrot/African grey parrot.jpg", 
+   "rio": "available pets/Parrot/macaw.jpg", 
+   "sunny": "available pets/Parrot/Cockatial.jpg", 
+   "kiwi": "available pets/Parrot/Budgie.jpg", 
+   "salsa": "available pets/Parrot/amazon parrot.jpg", 
+   "nuna": "available pets/Fish/angle fish.jpg", 
+   "spark": "available pets/Fish/guppy fish.jpg", 
+   "bubbles": "available pets/Fish/gold fish.jpg", 
+   "blaze": "available pets/Fish/betta fish.jpg", 
+   "coco": "available pets/Dogs/poddle dog.jpg", 
+   "stafy": "available pets/Dogs/Bull dog.jpg", 
+   "daisy": "available pets/Dogs/Golden Retriever.jpg", 
+   "tomy": "available pets/Dogs/German Shephered.jpg", 
+   "max": "available pets/Dogs/Laborer.jpg", 
+   "muffin": "available pets/Cats/Persian cat.jpg", 
+   "neko": "available pets/Cats/Maine coon.jpg", 
+   "miso": "available pets/Cats/short hair.jpg", 
+   "tofu": "available pets/Cats/Siamese.jpg",
+   
+
+
+
+};
+
+const form = document.getElementById("adoptForm");
+const dialog = document.getElementById("adoptDialog");
+const overlay = document.getElementById("dialogOverlay");
+const congratsText = document.getElementById("congratsText");
+const petImage = document.getElementById("petImage");
+const closeDialogBtn = document.getElementById("closeDialog");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const petNameInputRaw = document.getElementById("petName").value.trim();
+  const petNameInput = petNameInputRaw.toLowerCase();
+  const userName = document.getElementById("yourName").value.trim();
+
+  if (!petNameInput || !userName) return;
+
+  congratsText.textContent = `${userName}, you have successfully adopted "${petNameInputRaw.charAt(0).toUpperCase() + petNameInputRaw.slice(1)}"!`;
+
+  if (petImages[petNameInput]) {
+    petImage.src = petImages[petNameInput];
+    petImage.style.display = "block";
+    petImage.alt = petNameInputRaw + " image";
+  } else {
+    petImage.style.display = "none";
+  }
+
+  overlay.classList.add("show");
+  dialog.classList.add("show");
+});
+
+function closeDialog() {
+  dialog.classList.remove("show");
+  overlay.classList.remove("show");
+  setTimeout(() => {
+    dialog.style.display = "none";
+    overlay.style.display = "none";
+    form.reset();
+  }, 400);
+}
+
+closeDialogBtn.addEventListener("click", closeDialog);
+overlay.addEventListener("click", closeDialog);
+</script>
+</body>
+</html>

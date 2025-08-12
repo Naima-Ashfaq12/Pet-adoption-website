@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quail Categories</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+     .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    transition: background 0.3s;
+}
+
+.back-arrow:hover {
+    background: #f1f1f1;
+}
+
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: #f8f8f8;
+      padding: 40px 20px;
+      border-radius: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-media {
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .about-media img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .about-media img:hover {
+      transform: scale(1.03);
+    }
+
+    .about-text {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .about-text h2 {
+      font-family:Georgia, 'Times New Roman', Times, serif; 
+     font-size: 3em;
+      color: rgba(160, 114, 15, 0.938);
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+
+    .custom-btn {
+      padding: 10px 20px;
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-btn:hover {
+      background-color: #ff4c4c;
+    }
+
+    .custom-btn.btn-2 span {
+      display: inline-block;
+      position: relative;
+      transition: padding-right 0.3s ease;
+    }
+
+    .custom-btn.btn-2 span::after {
+      content: '➔';
+      position: absolute;
+      right: -20px;
+      opacity: 0;
+      transition: opacity 0.3s, right 0.3s;
+    }
+
+    .custom-btn.btn-2:hover span {
+      padding-right: 25px;
+    }
+
+    .custom-btn.btn-2:hover span::after {
+      opacity: 1;
+      right: 0;
+    }
+
+    .btn-2 {
+      background: #43cea2;
+      background: linear-gradient(to right, #185a9d, #43cea2);
+    }
+
+    .btn-2:hover {
+      box-shadow: 0 0 15px #43cea2, 0 0 40px #185a9d;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+ <a href="blog.html" class="back-arrow">
+    <i class="fas fa-arrow-left"></i>
+</a>
+  <!-- Quail Intro Section -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Quail Categories</h2>
+      <p>
+        Quails are gentle, ground-dwelling birds celebrated for their calm temperament, rapid reproduction, and ease of care, making them ideal for both novice and seasoned bird enthusiasts. These petite yet hardy birds thrive in a variety of environments, requiring minimal space and resources, which makes them especially popular among backyard breeders, small-scale farmers, and urban aviary keepers. Known for their quiet nature and endearing behaviors, quails can be both functional and enjoyable additions to your flock—providing fresh eggs, insect control, and natural beauty. With a range of delightful breeds like Coturnix, Bobwhite, and Button Quail, each offers its own personality traits and visual appeal. Whether you're looking to start a sustainable homestead or simply enjoy the charm of these feathered friends, quails are a low-maintenance yet rewarding choice for any bird lover.
+      </p>
+    </div>
+    <div class="about-media">
+      <img src="images/quail.jpeg" alt="Quail Family">
+    </div>
+  </section>
+
+  <!-- Heading -->
+  <h2 style="text-align: center; font-size: 34px; margin: 40px 0 20px; color: #444; font-weight: bold; font-family: 'Segoe UI', sans-serif;">
+    🐦 Available Quail Categories
+  </h2>
+
+  <!-- Coturnix Quail -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Coturnix Quail</h2>
+      <p>
+        Meet Speckles – The Beginner's Delight!  
+        Name: Speckles  
+        Age: 6 months  
+        Breed: Coturnix  
+        Gender: Female  
+        Color: Brown Spotted  
+        Personality: Calm, Productive, Friendly  
+        Vaccinated: Yes  
+
+        About Speckles:  
+        Coturnix quails are the most popular breed for beginners. They mature quickly, lay eggs frequently, and require minimal space. Speckles is low-maintenance and ideal for small backyard coops.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Quail/couturnix.jpg" alt="Coturnix Quail">
+    </div>
+  </section>
+
+  <!-- Bobwhite Quail -->
+  <section class="about-section">
+    <div class="about-media">
+      <img src="available pets/Quail/bob white.jpg" alt="Bobwhite Quail">
+    </div>
+    <div class="about-text">
+      <h2>Bobwhite Quail</h2>
+      <p>
+        Meet Scout – The Whistling Watcher!  
+        Name: Scout  
+        Age: 1 year  
+        Breed: Bobwhite  
+        Gender: Male  
+        Color: White-chested with Brown Back  
+        Personality: Observant, Skittish, Active  
+        Vaccinated: Yes  
+
+        About Scout:  
+        Bobwhite quails are native to North America and recognized by their signature "bob-white" call. Scout is curious and ideal for open aviaries or controlled outdoor runs.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+  </section>
+
+  <!-- California Quail -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>California Quail</h2>
+      <p>
+        Meet Pebble – The Crest-Headed Beauty!  
+        Name: Pebble  
+        Age: 8 months  
+        Breed: California Quail  
+        Gender: Female  
+        Color: Blue-Grey with Scaled Chest  
+        Personality: Gentle, Elegant, Social  
+        Vaccinated: Yes  
+
+        About Pebble:  
+        Known for their teardrop-shaped head plume, California quails are ornamental and peaceful. Pebble thrives in small groups and adds flair to any aviary setting.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Quail/california.jpg" alt="California Quail">
+    </div>
+  </section>
+
+  <!-- Button Quail -->
+  <section class="about-section">
+    <div class="about-media">
+      <img src="available pets/Quail/button.jpg" alt="Button Quail">
+    </div>
+    <div class="about-text">
+      <h2>Button Quail</h2>
+      <p>
+        Meet Dotty – The Pocket-Sized Pal!  
+        Name: Dotty  
+        Age: 4 months  
+        Breed: Button Quail  
+        Gender: Female  
+        Color: Cinnamon  
+        Personality: Tiny, Curious, Quiet  
+        Vaccinated: Yes  
+
+        About Dotty:  
+        Button quails are the smallest quail breed, making them perfect for indoor aviaries or small pens. Dotty is a quiet, ground-loving bird that enjoys cozy corners and companionship.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+  </section>
+
+  <!-- Japanese Quail -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Japanese Quail</h2>
+      <p>
+        Meet Mochi – The Egg Layer Extraordinaire!  
+        Name: Mochi  
+        Age: 5 months  
+        Breed: Japanese Quail  
+        Gender: Female  
+        Color: Light Brown  
+        Personality: Productive, Sociable, Easygoing  
+        Vaccinated: Yes  
+
+        About Mochi:  
+        Japanese quails are highly valued for egg production and adaptability. Mochi is calm, pairs well with other quails, and is ideal for beginners or breeders alike.
+      </p>
+      <a href="contact.html" class="contact-link">
+	<button class="custom-btn btn-2"><span>Adopt Me</span></button>
+	</a>
+    </div>
+    <div class="about-media">
+      <img src="available pets/Quail/japanese.jpg" alt="Japanese Quail">
+    </div>
+  </section>
+
+</body>
+</html>
